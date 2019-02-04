@@ -34,6 +34,16 @@
       </ParameterList>
     </ParameterList>
   
+    <ParameterList  name="Computed Fields">
+      <ParameterList  name="Initial Temperature">
+        <Parameter  name="Function" type="string"   value="100.0"/>
+      </ParameterList>
+    </ParameterList>
+
+    <ParameterList  name="Initial Temperature">
+      <Parameter  name="Computed Field" type="string" value="Initial Temperature"/>
+    </ParameterList>
+
     <ParameterList  name="Natural Boundary Conditions">
       <ParameterList  name="Flux Boundary Condition">
         <Parameter  name="Type"     type="string"   value="Uniform"/>

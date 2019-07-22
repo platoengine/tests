@@ -22,7 +22,7 @@
     </ParameterList>
 
     <ParameterList name="Newton Iteration">
-      <Parameter name="Number Iterations" type="int" value="1"/>
+      <Parameter name="Number Iterations" type="int" value="2"/>
     </ParameterList>
 
     <ParameterList name="Material Model">

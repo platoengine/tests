@@ -18,7 +18,7 @@ set( TEST_NAME ${testDirName} )
 ## create test
 add_test( NAME ${TEST_NAME}
           COMMAND ${CMAKE_COMMAND}
-          -DLGR_EXECUTABLE=${LGR_BINARY_DIR}/lgr
+          -DANALYZE_EXECUTABLE=${CMAKE_BINARY_DIR}/analyze
           -DCONFIG_FILE=${CONFIG_FILE}
           -DRUN_TIME=${RUN_TIME}
           -DNUM_RUNS=${NUM_RUNS}

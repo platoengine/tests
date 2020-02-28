@@ -1,14 +1,14 @@
 # copy mesh files from current source dir to binary dir
-configure_file(  ${CMAKE_CURRENT_SOURCE_DIR}/bar.xml
-                 ${CMAKE_CURRENT_BINARY_DIR}/bar.xml COPYONLY)
+configure_file(  ${CMAKE_CURRENT_SOURCE_DIR}/soap.xml
+                 ${CMAKE_CURRENT_BINARY_DIR}/soap.xml COPYONLY)
 configure_file(  ${CMAKE_CURRENT_SOURCE_DIR}/amgx.json
                  ${CMAKE_CURRENT_BINARY_DIR}/amgx.json COPYONLY)
-configure_file(  ${CMAKE_CURRENT_SOURCE_DIR}/bar.exo
-                 ${CMAKE_CURRENT_BINARY_DIR}/bar.exo COPYONLY)
+configure_file(  ${CMAKE_CURRENT_SOURCE_DIR}/soap.exo
+                 ${CMAKE_CURRENT_BINARY_DIR}/soap.exo COPYONLY)
 
-set( CONFIG_FILE "bar.xml" )
-set( RUN_TIME 0.7 )
-set( NUM_RUNS 10 )
+set( CONFIG_FILE "soap.xml" )
+set( RUN_TIME 1.7 )
+set( NUM_RUNS 1 )
 
 get_filename_component(testDirName ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 set( TEST_NAME ${testDirName} )

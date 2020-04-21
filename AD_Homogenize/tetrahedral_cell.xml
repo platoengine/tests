@@ -7,19 +7,7 @@
   <Parameter name="Physics" type="string" value="Plato Driver"/>
   <Parameter  name="Spatial Dimension"    type="int"    value="3"/>
 
-  <Parameter name="Input Mesh" type="string" value="./tetrahedral_cell.osh"/>
-
-  <ParameterList name="Visualization">
-    <Parameter name="Index Viz By Time" type="bool" value="false"/>
-    <ParameterList name="Tags">
-      <Parameter name="Node" type="Array(string)" value="{coordinates,displacement}"/>
-      <Parameter name="Element" type="Array(string)" value="{}"/>
-    </ParameterList>
-  </ParameterList>
-
-  <ParameterList  name="Associations">
-    <Parameter name="File" type="string" value="./tetrahedral_cell_assoc.txt"/>
-  </ParameterList>
+  <Parameter name="Input Mesh" type="string" value="./tetrahedral_cell.exo"/>
   
   <ParameterList name="Plato Problem">
     <Parameter name="Physics"            type="string"  value="Mechanical"/>

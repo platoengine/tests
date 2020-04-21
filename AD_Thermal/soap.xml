@@ -4,14 +4,6 @@
 
   <Parameter name="Input Mesh" type="string" value="./soap.exo"/>
 
-  <ParameterList name="Visualization">
-    <Parameter name="Index Viz By Time" type="bool" value="false"/>
-    <ParameterList name="Tags">
-      <Parameter name="Node" type="Array(string)" value="{coordinates,nodal mass}"/>
-      <Parameter name="Element" type="Array(string)" value="{}"/>
-    </ParameterList>
-  </ParameterList>
-
   <ParameterList name="Plato Problem">
     <Parameter name="Physics"         type="string"  value="Thermal"/>
     <Parameter name="PDE Constraint"  type="string"  value="Thermostatics"/>

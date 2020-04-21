@@ -19,6 +19,9 @@ mesh surface 15 24 20
 block 1 surface 15 24 20
 block 1 element type TRI
 sideset 1 curve 43 35 26
+sideset 1 name "ss_1"
 sideset 2 curve 43
+sideset 2 name "ss_2"
 nodeset 3 curve 41 28 36
-export mesh "beam2d.gen" dimension 2 overwrite
+nodeset 3 name "ns_3"
+export mesh "beam2d.exo" dimension 2 overwrite

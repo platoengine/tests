@@ -6,7 +6,7 @@
 
   <ParameterList name="Plato Problem">
     <Parameter name="Physics"         type="string"  value="Thermal"/>
-    <Parameter name="PDE Constraint"  type="string"  value="Heat Equation"/>
+    <Parameter name="PDE Constraint"  type="string"  value="Parabolic"/>
     <Parameter name="Objective"       type="string"  value="My Internal Thermal Energy"/>
     <Parameter name="Self-Adjoint"    type="bool"    value="false"/>
 
@@ -24,7 +24,7 @@
       <Parameter name="Time Step" type="double" value="60.0"/>
     </ParameterList>
 
-    <ParameterList name="Heat Equation">
+    <ParameterList name="Parabolic">
       <ParameterList name="Penalty Function">
         <Parameter name="Type" type="string" value="SIMP"/>
         <Parameter name="Exponent" type="double" value="1.0"/>
@@ -42,8 +42,10 @@
     </ParameterList>
 
     <ParameterList name="Material Model">
-      <ParameterList name="Isotropic Linear Thermal">
-        <Parameter  name="Conductivity Coefficient" type="double" value="210.0"/>
+      <ParameterList name="Thermal Conduction">
+        <Parameter  name="Thermal Conductivity" type="double" value="210.0"/>
+      </ParameterList>
+      <ParameterList name="Thermal Mass">
         <Parameter  name="Mass Density" type="double" value="2703.0"/>
         <Parameter  name="Specific Heat" type="double" value="900.0"/>
       </ParameterList>

@@ -20,4 +20,4 @@ add_test( NAME ${TEST_NAME}
           -DCONFIG_FILE=${CONFIG_FILE}
           -DRUN_TIME=${RUN_TIME}
           -DNUM_RUNS=${NUM_RUNS}
-          -P ${CMAKE_SOURCE_DIR}/tests/timer.cmake )
+          -P ${CMAKE_SOURCE_DIR}/tests/tools/timer.cmake )

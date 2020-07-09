@@ -32,4 +32,5 @@ add_test( NAME ${TEST_NAME}_regression
           -DOUTPUT_DIR=${OUTPUT_DIR}
           -DGOLD_DIR=${CMAKE_CURRENT_SOURCE_DIR}/gold_data
           -DVTKDIFF_CONF=${CMAKE_CURRENT_SOURCE_DIR}/vtk.diff
+          -DVTKDIFF=${VTKDIFF}
           -P ${CMAKE_SOURCE_DIR}/tests/tools/compare.cmake )

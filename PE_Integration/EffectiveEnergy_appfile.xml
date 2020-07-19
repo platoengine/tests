@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <Operation>
-  <Function>ComputeObjectiveValue</Function>
   <Name>Compute Objective Value</Name>
+  <Function>ComputeCriterionValue</Function>
+  <Criterion>Effective Energy</Criterion>
   <Input>
     <ArgumentName>Topology</ArgumentName>
   </Input>

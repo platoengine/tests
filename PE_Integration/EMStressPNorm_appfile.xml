@@ -1,6 +1,7 @@
 <Operation>
-  <Function>ComputeObjectiveX</Function>
   <Name>Compute ObjectiveX</Name>
+  <Function>ComputeCriterionX</Function>
+  <Criterion>Stress P-Norm</Criterion>
   <Input>
     <ArgumentName>Topology</ArgumentName>
   </Input>
@@ -19,8 +20,9 @@
 </Operation>
 
 <Operation>
-  <Function>ComputeObjective</Function>
   <Name>Compute Objective</Name>
+  <Function>ComputeCriterion</Function>
+  <Criterion>Stress P-Norm</Criterion>
   <Input>
     <ArgumentName>Topology</ArgumentName>
   </Input>

@@ -7,7 +7,7 @@ configure_file(  ${CMAKE_CURRENT_SOURCE_DIR}/bar.exo
                  ${CMAKE_CURRENT_BINARY_DIR}/bar.exo COPYONLY)
 
 set( CONFIG_FILE "bar.xml" )
-set( RUN_TIME 0.7 )
+set( RUN_TIME 0.8 )
 set( NUM_RUNS 10 )
 set( OUTPUT_DIR "output_data" )
 

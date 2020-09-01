@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <Operation>
-  <Function>ComputeObjectiveX</Function>
   <Name>Compute ObjectiveX</Name>
+  <Function>ComputeCriterionX</Function>
+  <Criterion>Internal Energy</Criterion>
   <Input>
     <ArgumentName>Topology</ArgumentName>
   </Input>
@@ -20,15 +21,18 @@
 </Operation>
 
 <Operation>
-  <Function>ComputeObjective</Function>
   <Name>Compute Objective</Name>
+  <Function>ComputeCriterion</Function>
+  <Criterion>Internal Energy</Criterion>
   <Input>
     <ArgumentName>Topology</ArgumentName>
   </Input>
   <Output>
+    <Argument>Value</Argument>
     <ArgumentName>Objective Value</ArgumentName>
   </Output>
   <Output>
+    <Argument>Gradient</Argument>
     <ArgumentName>Objective Gradient</ArgumentName>
   </Output>
 </Operation>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Operation>
+  <Function>ComputeObjective</Function>
+  <Name>Compute Objective</Name>
+  <Input>
+    <ArgumentName>Topology</ArgumentName>
+  </Input>
+  <Output>
+    <ArgumentName>Objective Value</ArgumentName>
+  </Output>
+  <Output>
+    <ArgumentName>Objective Gradient</ArgumentName>
+  </Output>
+</Operation>

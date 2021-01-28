@@ -61,95 +61,95 @@
       <ParameterList  name="X Fixed Displacement Boundary Condition NegX">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="0"/>
-        <Parameter  name="Sides"    type="string" value="ns_1"/>
+        <Parameter  name="Sides"    type="string" value="ss_1"/>
       </ParameterList>
       <ParameterList  name="X Fixed Displacement Boundary Condition PosX">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="0"/>
-        <Parameter  name="Sides"    type="string" value="ns_2"/>
+        <Parameter  name="Sides"    type="string" value="ss_2"/>
       </ParameterList>
       <ParameterList  name="Y Fixed Displacement Boundary Condition NegY">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="1"/>
-        <Parameter  name="Sides"    type="string" value="ns_3"/>
+        <Parameter  name="Sides"    type="string" value="ss_3"/>
       </ParameterList>
       <ParameterList  name="Y Fixed Displacement Boundary Condition PosY">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="1"/>
-        <Parameter  name="Sides"    type="string" value="ns_4"/>
+        <Parameter  name="Sides"    type="string" value="ss_4"/>
       </ParameterList>
       <ParameterList  name="Z Fixed Displacement Boundary Condition NegZ">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="2"/>
-        <Parameter  name="Sides"    type="string" value="ns_5"/>
+        <Parameter  name="Sides"    type="string" value="ss_5"/>
       </ParameterList>
       <ParameterList  name="Z Fixed Displacement Boundary Condition PosZ">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="2"/>
-        <Parameter  name="Sides"    type="string" value="ns_6"/>
+        <Parameter  name="Sides"    type="string" value="ss_6"/>
       </ParameterList>
 
       <ParameterList  name="X Fixed Displacement Boundary Condition NegY">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="0"/>
-        <Parameter  name="Sides"    type="string" value="ns_3"/>
+        <Parameter  name="Sides"    type="string" value="ss_3"/>
       </ParameterList>
       <ParameterList  name="X Fixed Displacement Boundary Condition PosY">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="0"/>
-        <Parameter  name="Sides"    type="string" value="ns_4"/>
+        <Parameter  name="Sides"    type="string" value="ss_4"/>
       </ParameterList>
       <ParameterList  name="X Fixed Displacement Boundary Condition NegZ">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="0"/>
-        <Parameter  name="Sides"    type="string" value="ns_5"/>
+        <Parameter  name="Sides"    type="string" value="ss_5"/>
       </ParameterList>
       <ParameterList  name="X Fixed Displacement Boundary Condition PosZ">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="0"/>
-        <Parameter  name="Sides"    type="string" value="ns_6"/>
+        <Parameter  name="Sides"    type="string" value="ss_6"/>
       </ParameterList>
 
       <ParameterList  name="Y Fixed Displacement Boundary Condition NegX">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="1"/>
-        <Parameter  name="Sides"    type="string" value="ns_1"/>
+        <Parameter  name="Sides"    type="string" value="ss_1"/>
       </ParameterList>
       <ParameterList  name="Y Fixed Displacement Boundary Condition PosX">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="1"/>
-        <Parameter  name="Sides"    type="string" value="ns_2"/>
+        <Parameter  name="Sides"    type="string" value="ss_2"/>
       </ParameterList>
       <ParameterList  name="Y Fixed Displacement Boundary Condition NegZ">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="1"/>
-        <Parameter  name="Sides"    type="string" value="ns_5"/>
+        <Parameter  name="Sides"    type="string" value="ss_5"/>
       </ParameterList>
       <ParameterList  name="Y Fixed Displacement Boundary Condition PosZ">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="1"/>
-        <Parameter  name="Sides"    type="string" value="ns_6"/>
+        <Parameter  name="Sides"    type="string" value="ss_6"/>
       </ParameterList>
 
       <ParameterList  name="Z Fixed Displacement Boundary Condition NegX">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="2"/>
-        <Parameter  name="Sides"    type="string" value="ns_1"/>
+        <Parameter  name="Sides"    type="string" value="ss_1"/>
       </ParameterList>
       <ParameterList  name="Z Fixed Displacement Boundary Condition PosX">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="2"/>
-        <Parameter  name="Sides"    type="string" value="ns_2"/>
+        <Parameter  name="Sides"    type="string" value="ss_2"/>
       </ParameterList>
       <ParameterList  name="Z Fixed Displacement Boundary Condition NegY">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="2"/>
-        <Parameter  name="Sides"    type="string" value="ns_3"/>
+        <Parameter  name="Sides"    type="string" value="ss_3"/>
       </ParameterList>
       <ParameterList  name="Z Fixed Displacement Boundary Condition PosY">
         <Parameter  name="Type"     type="string" value="Zero Value"/>
         <Parameter  name="Index"    type="int"    value="2"/>
-        <Parameter  name="Sides"    type="string" value="ns_4"/>
+        <Parameter  name="Sides"    type="string" value="ss_4"/>
       </ParameterList>
     </ParameterList>
   </ParameterList>

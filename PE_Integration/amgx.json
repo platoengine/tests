@@ -32,7 +32,7 @@
         "monitor_residual": 1, 
         "convergence": "ABSOLUTE", 
         "scope": "main", 
-        "tolerance": 5.0e-15, 
+        "tolerance": 1.0e-15, 
         "norm": "L2"
     }
 }

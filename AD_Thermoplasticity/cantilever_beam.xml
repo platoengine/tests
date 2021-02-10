@@ -113,7 +113,7 @@
         <Parameter  name="Type"     type="string" value="Time Dependent"/>
         <Parameter  name="Index"    type="int"    value="3"/>
         <Parameter  name="Sides"    type="string" value="fixed_ss"/>
-        <Parameter  name="Function"    type="string" value="2.500"/>
+        <Parameter  name="Function"    type="string" value="250.0"/>
       </ParameterList>
     </ParameterList>
 

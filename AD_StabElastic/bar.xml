@@ -16,6 +16,15 @@
       <Parameter  name="Plottable" type="Array(string)" value="{pressure, deviatoric stress}"/>
     </ParameterList>
 
+    <ParameterList name="Spatial Model">
+      <ParameterList name="Domains">
+        <ParameterList name="Design Volume">
+          <Parameter name="Element Block" type="string" value="block_1"/>
+          <Parameter name="Material Model" type="string" value="Unobtainium"/>
+        </ParameterList>
+      </ParameterList>
+    </ParameterList>
+
     <ParameterList name="Time Stepping">
       <Parameter name="Number Time Steps" type="int" value="2"/>
       <Parameter name="Time Step" type="double" value="60.0"/>
@@ -25,11 +34,13 @@
       <Parameter name="Number Iterations" type="int" value="2"/>
     </ParameterList>
 
-    <ParameterList name="Material Model">
-      <ParameterList name="Isotropic Linear Elastic">
-        <Parameter  name="Poissons Ratio" type="double" value="0.4999"/>
-        <Parameter  name="Youngs Modulus" type="double" value="1.0e11"/>
-        <Parameter  name="Pressure Scaling" type="double" value="1e12"/>
+    <ParameterList name="Material Models">
+      <ParameterList name="Unobtainium">
+        <ParameterList name="Isotropic Linear Elastic">
+          <Parameter  name="Poissons Ratio" type="double" value="0.4999"/>
+          <Parameter  name="Youngs Modulus" type="double" value="1.0e11"/>
+          <Parameter  name="Pressure Scaling" type="double" value="1e12"/>
+        </ParameterList>
       </ParameterList>
     </ParameterList>
   

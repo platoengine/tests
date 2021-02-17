@@ -48,19 +48,20 @@ move volume 8 x {base_thickness/2.0+bracket_length-mount_radius-mount_inset}
 subtract volume 8 from volume 1
 webcut volume all with plane yplane
 webcut volume all with plane zplane
-#imprint all
-#merge all
-## volume all scheme tetmesh
-#volume all scheme tetmesh geometry approximation angle 30
-#volume all size {mesh_size}
-#mesh volume all
-#block 1 volume all
-#sideset 2 surface 120 125
-#sideset 2 name "ss_2"
-#sideset 20 surface 133 144
-#sideset 20 name "ss_20"
-#nodeset 1 surface 53 59 71 65
-#nodeset 1 name "ns_1"
-#nodeset 10 surface 145 131 121 123
-#nodeset 10 name "ns_10"
-#export mesh "bolted_bracket.exo" overwrite
+imprint all
+merge all
+# volume all scheme tetmesh
+volume all scheme tetmesh geometry approximation angle 30
+volume all size {mesh_size}
+mesh volume all
+block 1 volume all
+block 1 name "block_1"
+sideset 2 surface 120 125
+sideset 2 name "ss_2"
+sideset 20 surface 133 144
+sideset 20 name "ss_20"
+nodeset 1 surface 53 59 71 65
+nodeset 1 name "ns_1"
+nodeset 10 surface 145 131 121 123
+nodeset 10 name "ns_10"
+export mesh "bolted_bracket.exo" overwrite

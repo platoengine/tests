@@ -113,4 +113,6 @@ nodeset 5 surface 350
 nodeset 5 name "ns_5"
 nodeset 6 surface 339
 nodeset 6 name "ns_6"
+block 1 volume all
+block 1 name "block_1"
 export mesh "tetrahedral_cell.exo" overwrite

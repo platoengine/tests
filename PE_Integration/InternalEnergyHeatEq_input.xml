@@ -7,15 +7,16 @@
   <ParameterList name="Plato Problem">
     <Parameter name="Physics"         type="string"  value="Thermal"/>
     <Parameter name="PDE Constraint"  type="string"  value="Parabolic"/>
-    <Parameter name="Objective"       type="string"  value="My Internal Thermal Energy"/>
     <Parameter name="Self-Adjoint"    type="bool"    value="false"/>
 
-    <ParameterList name="My Internal Thermal Energy">
-      <Parameter name='Type' type='string' value='Scalar Function'/> 
-      <Parameter name='Scalar Function Type' type='string' value='Internal Thermal Energy'/>
-      <ParameterList name="Penalty Function">
-        <Parameter name="Type" type="string" value="SIMP"/>
-        <Parameter name="Exponent" type="double" value="1.0"/>
+    <ParameterList name="Criteria">
+      <ParameterList name="Internal Energy">
+        <Parameter name='Type' type='string' value='Scalar Function'/> 
+        <Parameter name='Scalar Function Type' type='string' value='Internal Thermal Energy'/>
+        <ParameterList name="Penalty Function">
+          <Parameter name="Type" type="string" value="SIMP"/>
+          <Parameter name="Exponent" type="double" value="1.0"/>
+        </ParameterList>
       </ParameterList>
     </ParameterList>
 
@@ -41,13 +42,24 @@
       <Parameter  name="Computed Field" type="string" value="Initial Temperature"/>
     </ParameterList>
 
-    <ParameterList name="Material Model">
-      <ParameterList name="Thermal Conduction">
-        <Parameter  name="Thermal Conductivity" type="double" value="210.0"/>
+    <ParameterList name="Spatial Model">
+      <ParameterList name="Domains">
+        <ParameterList name="Design Volume">
+          <Parameter name="Element Block" type="string" value="block_1"/>
+          <Parameter name="Material Model" type="string" value="Unobtainium"/>
+        </ParameterList>
       </ParameterList>
-      <ParameterList name="Thermal Mass">
-        <Parameter  name="Mass Density" type="double" value="2703.0"/>
-        <Parameter  name="Specific Heat" type="double" value="900.0"/>
+    </ParameterList>
+
+    <ParameterList name="Material Models">
+      <ParameterList name="Unobtainium">
+        <ParameterList name="Thermal Conduction">
+          <Parameter  name="Thermal Conductivity" type="double" value="210.0"/>
+        </ParameterList>
+        <ParameterList name="Thermal Mass">
+          <Parameter  name="Mass Density" type="double" value="2703.0"/>
+          <Parameter  name="Specific Heat" type="double" value="900.0"/>
+        </ParameterList>
       </ParameterList>
     </ParameterList>
   

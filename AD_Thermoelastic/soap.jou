@@ -17,4 +17,5 @@ sideset 2 surface 6
 sideset 2 name "ss_2"
 block 1 volume 1
 block 1 element type TETRA
+block 1 name "block_1"
 export mesh "soap.exo" overwrite

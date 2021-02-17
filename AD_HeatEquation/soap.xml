@@ -29,21 +29,30 @@
       </ParameterList>
     </ParameterList>
 
-    <ParameterList name="Material Model">
-
-      <ParameterList name="Thermal Mass">
-        <Parameter name="Temperature Dependent" type="bool" value="true"/>
-        <ParameterList name="Specific Heat">
-          <Parameter name="c0" type="double" value="900.0"/>
-          <Parameter name="c1" type="double" value="5.0e-4"/>
+    <ParameterList name="Spatial Model">
+      <ParameterList name="Domains">
+        <ParameterList name="Design Volume">
+          <Parameter name="Element Block" type="string" value="block_1"/>
+          <Parameter name="Material Model" type="string" value="Aluminum"/>
         </ParameterList>
-        <Parameter  name="Mass Density" type="double" value="2703.0"/>
       </ParameterList>
+    </ParameterList>
 
-      <ParameterList name="Thermal Conduction">
-        <Parameter  name="Thermal Conductivity" type="double" value="210.0"/>
+    <ParameterList name="Material Models">
+      <ParameterList name="Aluminum">
+        <ParameterList name="Thermal Mass">
+          <Parameter name="Temperature Dependent" type="bool" value="true"/>
+          <ParameterList name="Specific Heat">
+            <Parameter name="c0" type="double" value="900.0"/>
+            <Parameter name="c1" type="double" value="5.0e-4"/>
+          </ParameterList>
+          <Parameter  name="Mass Density" type="double" value="2703.0"/>
+        </ParameterList>
+
+        <ParameterList name="Thermal Conduction">
+          <Parameter  name="Thermal Conductivity" type="double" value="210.0"/>
+        </ParameterList>
       </ParameterList>
-
     </ParameterList>
   
     <ParameterList  name="Computed Fields">

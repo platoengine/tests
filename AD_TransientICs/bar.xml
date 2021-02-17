@@ -9,6 +9,15 @@
     <Parameter name="PDE Constraint"  type="string"  value="Hyperbolic"/>
     <Parameter name="Self-Adjoint"       type="bool"    value="false"/>
 
+    <ParameterList name="Spatial Model">
+      <ParameterList name="Domains">
+        <ParameterList name="Design Volume">
+          <Parameter name="Element Block" type="string" value="block_1"/>
+          <Parameter name="Material Model" type="string" value="Unobtainium"/>
+        </ParameterList>
+      </ParameterList>
+    </ParameterList>
+
     <ParameterList name="Time Integration">
       <Parameter name="Number Time Steps" type="int" value="10"/>
       <Parameter name="Time Step" type="double" value="1.0e-7"/>
@@ -42,13 +51,16 @@
       </ParameterList>
     </ParameterList>
 
-    <ParameterList name="Material Model">
-      <ParameterList name="Isotropic Linear Elastic"> <!-- aluminum -->
-        <Parameter  name="Mass Density" type="double" value="2.7"/> <!-- g/cm3 -->
-        <Parameter  name="Poissons Ratio" type="double" value="0.0"/>
-        <Parameter  name="Youngs Modulus" type="double" value="68.0e10"/> <!-- dyne/cm2 -->
+    <ParameterList name="Material Models">
+      <ParameterList name="Unobtainium">
+        <ParameterList name="Isotropic Linear Elastic"> <!-- aluminum -->
+          <Parameter  name="Mass Density" type="double" value="2.7"/> <!-- g/cm3 -->
+          <Parameter  name="Poissons Ratio" type="double" value="0.0"/>
+          <Parameter  name="Youngs Modulus" type="double" value="68.0e10"/> <!-- dyne/cm2 -->
+        </ParameterList>
       </ParameterList>
     </ParameterList>
+
     <ParameterList  name="Displacement Boundary Conditions">
       <ParameterList  name="X0 Boundary Condition">
         <Parameter  name="Type"     type="string" value="Time Dependent"/>

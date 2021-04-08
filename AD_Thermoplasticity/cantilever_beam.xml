@@ -75,14 +75,14 @@
       <ParameterList  name="Mechanical Natural Boundary Conditions">
         <!-- <ParameterList  name="Traction Vector Boundary Condition">
           <Parameter  name="Type"     type="string"        value="Uniform"/>
-          <Parameter  name="Values"   type="Array(double)" value="{-174.0, 0.0, 0.0}"/>
+          <Parameter  name="Values"   type="Array(string)" value="{-174.0*t, 0.0, 0.0}"/>
           <Parameter  name="Sides"    type="string"        value="load_ss"/>
         </ParameterList> -->
       </ParameterList>
       <ParameterList  name="Thermal Natural Boundary Conditions">
         <ParameterList  name="Flux Density Boundary Condition">
           <Parameter  name="Type"     type="string" value="Uniform"/>
-          <Parameter  name="Value"   type="double"  value="0.0e3"/>
+          <Parameter  name="Value"    type="string" value="0.0e3*t"/>
           <Parameter  name="Sides"    type="string" value="load_ss"/>
         </ParameterList>
       </ParameterList>

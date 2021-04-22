@@ -1,5 +1,6 @@
 {
     "config_version": 2, 
+    "determinism_flag": 1, 
     "solver": {
         "preconditioner": {
             "print_grid_stats": 1, 
@@ -23,7 +24,7 @@
             "scope": "amg", 
             "max_levels": 100, 
             "postsweeps": 4, 
-            "cycle": "F"
+            "cycle": "V"
         }, 
         "solver": "PBICGSTAB", 
         "print_solve_stats": 0, 
@@ -32,7 +33,7 @@
         "monitor_residual": 1, 
         "convergence": "ABSOLUTE", 
         "scope": "main", 
-        "tolerance": 1.0e-15, 
+        "tolerance": 1.0e-07, 
         "norm": "L2"
     }
 }

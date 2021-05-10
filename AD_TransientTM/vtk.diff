@@ -8,7 +8,7 @@ NODAL VARIABLES
 	displacement relative 1.0e-6 floor 1e-10
 	temperature relative 1.0e-6 floor 1e-10
 	velocity relative 1.0e-6 floor 1e-10
-	temperature_dot relative 1.0e-6 floor 1e-10
+	temperature_dot relative 1.0e-6 floor 1e-9
 
 # No ELEMENT VARIABLES
 

@@ -11,6 +11,7 @@
 <PDataArray type="Float64" Name="Pressure" NumberOfComponents="1" format="binary"/>
 <PDataArray type="Float64" Name="Reaction Force" NumberOfComponents="1" format="binary"/>
 <PDataArray type="Float64" Name="Displacements" NumberOfComponents="3" format="binary"/>
+<PDataArray type="Float64" Name="Topology" NumberOfComponents="1" format="binary"/>
 </PPointData>
 <PCellData>
 <PDataArray type="Int64" Name="global" NumberOfComponents="1" format="binary"/>

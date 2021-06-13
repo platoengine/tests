@@ -1,13 +1,13 @@
 # copy mesh files from current source dir to binary dir
-configure_file(  ${CMAKE_CURRENT_SOURCE_DIR}/flow_rectangular_channel.xml
-                 ${CMAKE_CURRENT_BINARY_DIR}/flow_rectangular_channel.xml COPYONLY)
-configure_file(  ${CMAKE_CURRENT_SOURCE_DIR}/flow_rectangular_channel.exo
-                 ${CMAKE_CURRENT_BINARY_DIR}/flow_rectangular_channel.exo COPYONLY)
+configure_file(  ${CMAKE_CURRENT_SOURCE_DIR}/cavity_driven_flow.xml
+                 ${CMAKE_CURRENT_BINARY_DIR}/cavity_driven_flow.xml COPYONLY)
+configure_file(  ${CMAKE_CURRENT_SOURCE_DIR}/cavity_driven_flow.exo
+                 ${CMAKE_CURRENT_BINARY_DIR}/cavity_driven_flow.exo COPYONLY)
 configure_file(  ${CMAKE_CURRENT_SOURCE_DIR}/amgx.json
                  ${CMAKE_CURRENT_BINARY_DIR}/amgx.json COPYONLY)
 
-set( CONFIG_FILE "flow_rectangular_channel.xml" )
-set( RUN_TIME 80 )
+set( CONFIG_FILE "cavity_driven_flow.xml" )
+set( RUN_TIME 200 )
 set( NUM_RUNS 1 )
 set( OUTPUT_DIR "out_vtk" )
 

@@ -10,6 +10,8 @@
 <PDataArray type="Int32" Name="class_id" NumberOfComponents="1" format="binary"/>
 <PDataArray type="Float64" Name="Pressure" NumberOfComponents="1" format="binary"/>
 <PDataArray type="Float64" Name="Velocity" NumberOfComponents="3" format="binary"/>
+<PDataArray type="Float64" Name="Predictor" NumberOfComponents="3" format="binary"/>
+<PDataArray type="Float64" Name="Temperature" NumberOfComponents="1" format="binary"/>
 <PDataArray type="Float64" Name="Topology" NumberOfComponents="1" format="binary"/>
 </PPointData>
 <PCellData>
